@@ -30,3 +30,10 @@ export const urgencyLabels: Record<Urgency, string> = {
   medium: "Medium",
   high: "High",
 };
+
+export const statusLabels: Record<FollowUpStatus, string> = {
+  open: "Open",
+  "contacted-customer": "Contacted customer",
+  rescheduled: "Rescheduled",
+  resolved: "Resolved",
+};
