@@ -49,3 +49,21 @@ export function EmptyState() {
     </div>
   );
 }
+
+export function NoMatchesState({ onClear }: { onClear: () => void }) {
+  return (
+    <div className="flex flex-col items-center gap-3 py-16 text-center">
+      <h2 className="text-xl font-bold">No exceptions match these filters</h2>
+      <p className="text-neutral-600">
+        Try another issue type or urgency, or clear the filters to see every exception.
+      </p>
+      <button
+        type="button"
+        onClick={onClear}
+        className="mt-2 h-11 rounded-md border-[1.5px] border-neutral-900 bg-white px-6 font-semibold hover:bg-neutral-50 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-800"
+      >
+        Clear filters
+      </button>
+    </div>
+  );
+}
