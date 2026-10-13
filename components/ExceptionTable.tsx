@@ -36,6 +36,7 @@ export function ExceptionTable({ items }: { items: DeliveryException[] }) {
             <td className={td}>
               <Link
                 href={`/exceptions/${item.id}`}
+                prefetch={false}
                 className="font-semibold text-blue-800 underline-offset-2 hover:underline"
               >
                 View details<span className="sr-only"> for {item.stopId}</span>
