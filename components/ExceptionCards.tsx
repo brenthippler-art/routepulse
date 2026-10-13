@@ -11,6 +11,7 @@ export function ExceptionCards({ items }: { items: DeliveryException[] }) {
         <li key={item.id}>
           <Link
             href={`/exceptions/${item.id}`}
+            prefetch={false}
             className="flex flex-col gap-1.5 rounded-lg border-[1.5px] border-neutral-300 px-4 py-3.5 hover:border-neutral-900 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-800"
           >
             <span className="flex items-center justify-between">
