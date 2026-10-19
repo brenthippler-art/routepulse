@@ -34,7 +34,7 @@ Every change went through a feature branch and pull request, with CI required to
 
 | | |
 |---|---|
-| **Framework** | Next.js 15 (App Router) |
+| **Framework** | Next.js 16.3.8 (App Router) |
 | **Language** | TypeScript |
 | **Styling** | Tailwind CSS |
 | **Testing** | Vitest, React Testing Library, jest-dom |
